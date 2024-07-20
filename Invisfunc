@@ -1,4 +1,11 @@
-local function Invisfunc()
+function Invisfunc()
+    local Players = game:GetService("Players")
+    local LocalPlayer = Players.LocalPlayer
+
+    local function IsAlive(player)
+        return player and player.Character and player.Character:FindFirstChild("Humanoid") and player.Character.Humanoid.Health > 0
+    end
+
     if IsAlive(LocalPlayer) then
         LocalPlayer.Character.LowerTorso.CollisionGroup = "Participants"
         LocalPlayer.Character.UpperTorso.CollisionGroup = "Participants"
@@ -17,4 +24,4 @@ local function Invisfunc()
     end
 end
 
-return Invis
+return Invisfunc
