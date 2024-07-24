@@ -393,10 +393,10 @@ library.NewWindow = function(name)
 
 			if enabled then
 				arraylist.Create(Table.Name)
-				CreateNotification("Aurora", 5, Table.Name .. " has been enabled")
+				CreateNotification("Kitler_R", 5, Table.Name .. " has been enabled")
 			else
 				arraylist.Remove(Table.Name)
-				CreateNotification("Aurora", 5, Table.Name .. " has been disabled")
+				CreateNotification("Kitler_R", 5, Table.Name .. " has been disabled")
 			end
 
 			lib2.Enabled = enabled
