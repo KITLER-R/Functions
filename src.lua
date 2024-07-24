@@ -160,7 +160,7 @@ local arraylist = {
 		item.Size = UDim2.new(0,0,0,0)
 		item.TextSize = 12
 		item.TextColor3 = Color3.fromRGB(255,255,255)
-		--item.TextXAlignment = Enum.TextXAlignment.Right
+		item.TextXAlignment = Enum.TextXAlignment.Right
 
 		local glow = Instance.new("ImageLabel",item)
 		glow.Size = UDim2.fromScale(4,4)
@@ -393,10 +393,10 @@ library.NewWindow = function(name)
 
 			if enabled then
 				arraylist.Create(Table.Name)
-				CreateNotification("Aurora", 5, Table.Name .. " has been enabled")
+				CreateNotification("Kitler", 5, Table.Name .. " has been enabled")
 			else
 				arraylist.Remove(Table.Name)
-				CreateNotification("Aurora", 5, Table.Name .. " has been disabled")
+				CreateNotification("Kitler", 5, Table.Name .. " has been disabled")
 			end
 
 			lib2.Enabled = enabled
